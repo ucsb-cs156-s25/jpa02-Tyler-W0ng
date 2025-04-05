@@ -90,6 +90,6 @@ public class Team {
      */
     @Override
     public int hashCode() {
-        return this.name.hashCode() | this.members.hashCode();
+        return this.name.hashCode() & this.members.hashCode();
     }
 }
